@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-import Home from './pages/home';
 
-function App() {
+export function App() {
   return (
     <Router>
         <Switch>
@@ -17,10 +16,10 @@ function App() {
                 <p>I will be the browse page</p>
             </Route>
             <Route path="/">
-               <Home/>
+                <p>I am going to be a cloned Netflix application</p>
             </Route>
         </Switch>
     </Router>
   );
 }
-export default App
+export default App;
